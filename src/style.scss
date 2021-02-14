@@ -48,6 +48,10 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		.illustration-box {
+			display: none;
+		}
 	}
 
 	.faq-container {
@@ -168,6 +172,17 @@ body {
 
 	// w 921 x h 512
 	@media screen and (min-width: 1040px) {
+		section.main {
+			.illustration-box {
+				display: block;
+				position: relative;
+				width: 10%;
+				left: 72px;
+				top: 105px;
+				z-index: 1;
+			}
+		}
+
 		.faq-container {
 			width: 921px;
 			display: flex;

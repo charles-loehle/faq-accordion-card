@@ -30,6 +30,9 @@ body section.main {
   justify-content: center;
   align-items: center;
 }
+body section.main .illustration-box {
+  display: none;
+}
 body .faq-container {
   background-color: white;
   border-radius: 20px;
@@ -121,6 +124,14 @@ body .faq-container .faq .faq-toggle .fa-chevron-down.rotate {
   transform: rotate(180deg);
 }
 @media screen and (min-width: 1040px) {
+  body section.main .illustration-box {
+    display: block;
+    position: relative;
+    width: 10%;
+    left: 72px;
+    top: 105px;
+    z-index: 1;
+  }
   body .faq-container {
     width: 921px;
     display: flex;
