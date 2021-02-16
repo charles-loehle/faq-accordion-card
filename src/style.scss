@@ -48,10 +48,6 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		.illustration-box {
-			display: none;
-		}
 	}
 
 	.faq-container {
@@ -61,6 +57,11 @@ body {
 		margin-top: 8rem;
 		width: 328px;
 		box-shadow: 0px 41px 24px -24px hsl(250deg 73% 52%);
+		position: relative;
+
+		.illustration-box {
+			display: none;
+		}
 
 		.d-flex {
 			position: relative;
@@ -75,14 +76,14 @@ body {
 			.woman-online-mobile {
 				position: relative;
 				left: -15px;
-				top: -14px;
+				top: -131px;
 			}
 
 			.bg-pattern-mobile {
-				position: relative;
-				top: -107px;
-				left: 12px;
-				width: 90%;
+				position: absolute;
+				top: 11px;
+				left: 38px;
+				width: 75%;
 			}
 
 			.woman-online-desktop,
@@ -172,21 +173,20 @@ body {
 
 	// w 921 x h 512
 	@media screen and (min-width: 1040px) {
-		section.main {
-			.illustration-box {
-				display: block;
-				position: relative;
-				width: 10%;
-				left: 72px;
-				top: 105px;
-				z-index: 1;
-			}
-		}
-
 		.faq-container {
 			width: 921px;
 			display: flex;
-			overflow: hidden;
+			padding: 0;
+			min-height: 450px;
+
+			.illustration-box {
+				display: block;
+				position: absolute;
+				width: 18%;
+				left: -79px;
+				top: 189px;
+				z-index: 1;
+			}
 
 			.faq-main-content {
 				margin-top: 0;
@@ -206,11 +206,18 @@ body {
 
 			.image-container {
 				max-width: 452px;
-				height: 100%;
+				height: 467px;
+				overflow: hidden;
 
 				.woman-online-mobile,
 				.bg-pattern-mobile {
 					display: none;
+				}
+
+				.woman-online-desktop {
+					position: relative;
+					left: -77px;
+					top: 54px;
 				}
 
 				.woman-online-desktop,
@@ -219,9 +226,9 @@ body {
 				}
 
 				.bg-pattern-desktop {
-					position: absolute;
-					top: -31px;
-					left: -15px;
+					position: relative;
+					top: -296px;
+					left: -74px;
 				}
 			}
 		}
