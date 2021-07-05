@@ -42,7 +42,10 @@ body {
 	font-family: 'Kumbh Sans', sans-serif;
 	font-size: $copy-font-size;
 	padding: 1.5rem;
-	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 
 	section.main {
 		display: flex;
@@ -54,7 +57,7 @@ body {
 		background-color: white;
 		border-radius: 20px;
 		padding: 1.5rem;
-		margin-top: 8rem;
+		margin-top: 6rem;
 		width: 328px;
 		box-shadow: 0px 41px 24px -24px hsl(250deg 73% 52%);
 		position: relative;
@@ -178,6 +181,7 @@ body {
 			display: flex;
 			padding: 0;
 			min-height: 450px;
+			margin-top: 0;
 
 			.illustration-box {
 				display: block;
